@@ -15,7 +15,7 @@
         }
     </style>
 
-    <script src="js/mapPoints.js"> /* Video Map Photo list order and settings. Titles Scroll Mag Glass */ </script>
+    <script src="js/chordsInfoFingering.js"> /* Video Map Photo list order and settings. Titles Scroll Mag Glass */ </script>
 
 </head>
 
@@ -147,52 +147,23 @@
    <! ### ITEM MAP GLASS MANUAL d-block w-100 width:700px; visibility: hidden -->
    <!------------------------------------------------------------------------------------------------------- -->
 
-   <div id="multiCollapseExample000005" class="collapse cc Note1C Note2E Note3G NotesCEG" >
+
+   <div class="collapse cc Note1E Note2G Note3C NotesEGC" >
    <div class="card card-body"  style="padding:5px;">   
    <div class="row mr-auto container-fluid">
        <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12 container-fluid" style="padding:0px; margin:0px; border:5px solid #000000;">
            <div container-fluid"                                            style="padding:0px; margin:0px">
-           C major,C E G
+           C major,E G C 1st inversion
            </div>
        </div>
    </div></div></div>
 
-   <div id="multiCollapseExample000006" class="collapse cc Note1Cs Note2Es Note3Gs NotesCsEsGs" >
-   <div class="card card-body"  style="padding:5px;">   
-   <div class="row mr-auto container-fluid">
-       <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12 container-fluid" style="Padding:0px; margin:0px; border:5px solid #000000;">
-           <div container-fluid"                                            style="padding:0px; margin:0px">
-            C# major,C# E# G#
-           </div>
-       </div>
-   </div></div></div>
-
-   <div class="collapse cc Note1D Note2Fs Note3A NotesDFsA" >
+   <div class="collapse cc Note1Fs Note2A Note3D NotesFsAD" >
    <div class="card card-body"  style="padding:5px;">   
    <div class="row mr-auto container-fluid">
        <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12 container-fluid" style="padding:0px; margin:0px; border:5px solid #000000;">
            <div container-fluid"                                            style="padding:0px; margin:0px">
-           D major,D F# A
-           </div>
-       </div>
-   </div></div></div>
-
-   <div class="collapse cc Note1C Note2E Note3G NotesEGC" >
-   <div class="card card-body"  style="padding:5px;">   
-   <div class="row mr-auto container-fluid">
-       <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12 container-fluid" style="padding:0px; margin:0px; border:5px solid #000000;">
-           <div container-fluid"                                            style="padding:0px; margin:0px">
-           C major,C E G 1st inversion
-           </div>
-       </div>
-   </div></div></div>
-
-   <div class="collapse cc Note1D Note2Fs Note3A NotesFsAD" >
-   <div class="card card-body"  style="padding:5px;">   
-   <div class="row mr-auto container-fluid">
-       <div class="col-xs-12 col-sm-12 col-lg-12 col-xl-12 container-fluid" style="padding:0px; margin:0px; border:5px solid #000000;">
-           <div container-fluid"                                            style="padding:0px; margin:0px">
-           D major,D F# A 1st inversion
+           D major,F# A D 1st inversion
            </div>
        </div>
    </div></div></div>
@@ -213,96 +184,7 @@
 
 <script>
 
-let tags = [
-[ "Chord", "Note1", "Note2", "Note3", "Note4", "r1", "WebNote1", "WebNote2", "WebNote3", "WebNote4", "r2", "Info"] ,
-[ "C major", "C", "E", "G", "n", "|", "C", "E", "G", "n", "|", "n"] ,
-[ "C# major", "Cs", "F", "Gs", "n", "|", "C#", "E#", "G#", "n", "|", "n"] ,
-[ "D major", "D", "Fs", "A", "n", "|", "D", "F#", "A", "n", "|", "n"] ,
-[ "Eb major", "Gs", "G", "As", "n", "|", "Eb", "G", "Bb", "n", "|", "n"] ,
-[ "E major", "E", "Gs", "B", "n", "|", "E", "G#", "B", "n", "|", "n"] ,
-[ "F major", "F", "A", "C", "n", "|", "F", "A", "C", "n", "|", "n"] ,
-[ "F# major", "Fs", "As", "Cs", "n", "|", "F#", "A#", "C#", "n", "|", "n"] ,
-[ "G major", "G", "B", "D", "n", "|", "G", "B", "D", "n", "|", "n"] ,
-[ "Ab major", "Gs", "C", "Ds", "n", "|", "Ab", "C", "Eb", "n", "|", "n"] ,
-[ "A major", "A", "Cs", "E", "n", "|", "A", "C#", "E", "n", "|", "n"] ,
-[ "Bb major", "As", "D", "F", "n", "|", "Bb", "D", "F", "n", "|", "n"] ,
-[ "B major", "B", "Ds", "Fs", "n", "|", "B", "D#", "F#", "n", "|", "n"] ,
-[ "C minor", "C", "Ds", "G", "n", "|", "C", "Eb", "G", "n", "|", "n"] ,
-[ "C# minor", "Cs", "E", "Gs", "n", "|", "C#", "E", "G#", "n", "|", "n"] ,
-[ "D minor", "D", "F", "A", "n", "|", "D", "F", "A", "n", "|", "n"] ,
-[ "Eb minor", "Gs", "Fs", "As", "n", "|", "Eb", "Gb", "Bb", "n", "|", "n"] ,
-[ "E minor", "E", "G", "B", "n", "|", "E", "G", "B", "n", "|", "n"] ,
-[ "F minor", "F", "Gs", "C", "n", "|", "F", "Ab", "C", "n", "|", "n"] ,
-[ "F# minor", "Fs", "A", "Cs", "n", "|", "F#", "A", "C#", "n", "|", "n"] ,
-[ "G minor", "G", "As", "D", "n", "|", "G", "Bb", "D", "n", "|", "n"] ,
-[ "Ab minor", "Gs", "B", "Ds", "n", "|", "Ab", "Cb(B)", "Eb", "n", "|", "n"] ,
-[ "A minor", "A", "C", "E", "n", "|", "A", "C", "E", "n", "|", "n"] ,
-[ "Bb minor", "As", "Cs", "F", "n", "|", "Bb", "Db", "F", "n", "|", "n"] ,
-[ "B minor", "B", "D", "Fs", "n", "|", "B", "D", "F#", "n", "|", "n"] ,
-[ "C diminished", "C", "Ds", "Fs", "n", "|", "C", "Eb", "Gb", "n", "|", "n"] ,
-[ "C# diminished", "Cs", "E", "G", "n", "|", "C#", "E", "G", "n", "|", "n"] ,
-[ "D diminished", "D", "F", "Gs", "n", "|", "D", "F", "Ab", "n", "|", "n"] ,
-[ "Eb diminished", "Gs", "Fs", "A", "n", "|", "Eb", "Gb", "Bbb(A)", "n", "|", "Bbb is 5th above root (E not flat) and is A note."] ,
-[ "E diminished", "E", "G", "As", "n", "|", "E", "G", "Bb", "n", "|", "n"] ,
-[ "F diminished", "F", "Gs", "B", "n", "|", "F", "Ab", "Cb(B)", "n", "|", "n"] ,
-[ "F# diminished", "Fs", "A", "C", "n", "|", "F#", "A", "C", "n", "|", "n"] ,
-[ "G diminished", "G", "As", "Cs", "n", "|", "G", "Bb", "Db", "n", "|", "n"] ,
-[ "Ab diminished", "Gs", "Ds", "D", "n", "|", "Ab", "Cb", "Ebb(D)", "n", "|", "n"] ,
-[ "A diminished", "A", "C", "Ds", "n", "|", "A", "C", "Eb", "n", "|", "n"] ,
-[ "Bb diminished", "As", "Cs", "E", "n", "|", "Bb", "Db", "Fb(E)", "n", "|", "n"] ,
-[ "B diminished", "B", "D", "F", "n", "|", "B", "D", "F", "n", "|", "n"] ,
-[ "C major seventh", "C", "E", "G", "B", "|", "C", "E", "G", "B", "|", "n"] ,
-[ "C# major seventh", "Cs", "F", "Gs", "C", "|", "C#", "E#(F)", "G#", "B#(C)", "|", "n"] ,
-[ "D major seventh", "D", "Fs", "A", "Cs", "|", "D", "F#", "A", "C#", "|", "n"] ,
-[ "Eb major seventh", "Gs", "G", "As", "D", "|", "Eb", "G", "Bb", "D", "|", "n"] ,
-[ "E major seventh", "E", "Gs", "B", "Ds", "|", "E", "G#", "B", "D#", "|", "n"] ,
-[ "F major seventh", "F", "A", "C", "E", "|", "F", "A", "C", "E", "|", "n"] ,
-[ "F# major seventh", "Fs", "As", "Cs", "F", "|", "F#", "A#", "C#", "E#(F)", "|", "n"] ,
-[ "G major seventh", "G", "B", "D", "Fs", "|", "G", "B", "D", "F#", "|", "n"] ,
-[ "Ab major seventh", "Gs", "C", "Ds", "G", "|", "Ab", "C", "Eb", "G", "|", "n"] ,
-[ "A major seventh", "A", "Cs", "E", "Gs", "|", "A", "C#", "E", "G#", "|", "n"] ,
-[ "Bb major seventh", "As", "D", "F", "A", "|", "Bb", "D", "F", "A", "|", "n"] ,
-[ "B major seventh", "B", "Ds", "Fs", "As", "|", "B", "D#", "F#", "A#", "|", "n"] ,
-[ "C dominant seventh", "C", "E", "G", "As", "|", "C", "E", "G", "Bb", "|", "n"] ,
-[ "C# dominant seventh", "Cs", "F", "Gs", "B", "|", "C#", "E#(F)", "G#", "B", "|", "n"] ,
-[ "D dominant seventh", "D", "Fs", "A", "C", "|", "D", "F#", "A", "C", "|", "n"] ,
-[ "Eb dominant seventh", "Gs", "G", "As", "Cs", "|", "Eb", "G", "Bb", "Db", "|", "n"] ,
-[ "E dominant seventh", "E", "Gs", "B", "D", "|", "E", "G#", "B", "D", "|", "n"] ,
-[ "F dominant seventh", "F", "A", "C", "Ds", "|", "F", "A", "C", "Eb", "|", "n"] ,
-[ "F# dominant seventh", "Fs", "As", "Cs", "E", "|", "F#", "A#", "C#", "E", "|", "n"] ,
-[ "G dominant seventh", "G", "B", "D", "F", "|", "G", "B", "D", "F", "|", "n"] ,
-[ "Ab dominant seventh", "Gs", "C", "Ds", "Fs", "|", "Ab", "C", "Eb", "Gb", "|", "n"] ,
-[ "A dominant seventh", "A", "Cs", "E", "G", "|", "A", "C#", "E", "G", "|", "n"] ,
-[ "Bb dominant seventh", "As", "D", "F", "Gs", "|", "Bb", "D", "F", "Ab", "|", "n"] ,
-[ "B dominant seventh", "B", "Ds", "Fs", "A", "|", "B", "D#", "F#", "A", "|", "n"] ,
-[ "C minor seventh", "C", "Ds", "G", "As", "|", "C", "Eb", "G", "Bb", "|", "n"] ,
-[ "C# minor seventh", "Cs", "E", "Gs", "B", "|", "C#", "E", "G#", "B", "|", "n"] ,
-[ "D minor seventh", "D", "F", "A", "C", "|", "D", "F", "A", "C", "|", "n"] ,
-[ "Eb minor seventh", "Gs", "Fs", "As", "Cs", "|", "Eb", "Gb", "Bb", "Db", "|", "n"] ,
-[ "E minor seventh", "E", "G", "B", "D", "|", "E", "G", "B", "D", "|", "n"] ,
-[ "F minor seventh", "F", "Gs", "C", "Ds", "|", "F", "Ab", "C", "Eb", "|", "n"] ,
-[ "F# minor seventh", "Fs", "A", "Cs", "E", "|", "F#", "A", "C#", "E", "|", "n"] ,
-[ "G minor seventh", "G", "As", "D", "F", "|", "G", "Bb", "D", "F", "|", "n"] ,
-[ "Ab minor seventh", "Gs", "B", "Ds", "Fs", "|", "Ab", "Cb(B)", "Eb", "Gb", "|", "n"] ,
-[ "A minor seventh", "A", "C", "E", "G", "|", "A", "C", "E", "G", "|", "n"] ,
-[ "Bb minor seventh", "As", "Cs", "F", "Gs", "|", "Bb", "Db", "F", "Ab", "|", "n"] ,
-[ "B minor seventh", "B", "D", "Fs", "A", "|", "B", "D", "F#", "A", "|", "n"] ,
-[ "C minor seventh flat five", "C", "Ds", "Fs", "As", "|", "C", "Eb", "Gb", "Bb", "|", "n"] ,
-[ "C# minor seventh flat five", "Cs", "E", "G", "B", "|", "C#", "E", "G", "B", "|", "n"] ,
-[ "D minor seventh flat five", "D", "F", "Gs", "C", "|", "D", "F", "Ab", "C", "|", "n"] ,
-[ "Eb minor seventh flat five", "Gs", "Fs", "A", "Cs", "|", "Eb", "Gb", "Bbb(A)", "Db", "|", "n"] ,
-[ "E minor seventh flat five", "E", "G", "As", "D", "|", "E", "G", "Bb", "D", "|", "n"] ,
-[ "F minor seventh flat five", "F", "Gs", "B", "Ds", "|", "F", "Ab", "Cb(B)", "Eb", "|", "n"] ,
-[ "F# minor seventh flat five", "Fs", "A", "C", "E", "|", "F#", "A", "C", "E", "|", "n"] ,
-[ "G minor seventh flat five", "G", "As", "Cs", "F", "|", "G", "Bb", "Db", "F", "|", "n"] ,
-[ "Ab minor seventh flat five", "Gs", "Ds", "D", "Fs", "|", "Ab", "Cb", "Ebb(D)", "Gb", "|", "n"] ,
-[ "A minor seventh flat five", "A", "C", "Ds", "G", "|", "A", "C", "Eb", "G", "|", "n"] ,
-[ "Bb minor seventh flat five", "As", "Cs", "E", "Gs", "|", "Bb", "Db", "Fb(E)", "Ab", "|", "n"] ,
-[ "B minor seventh flat five", "B", "D", "F", "A", "|", "B", "D", "F", "A", "|", "n"] ,
-[ "Chord", "Note1", "Note2", "Note3", "Note4", "r1", "WebNote1", "WebNote2", "WebNote3", "WebNote4", "r2", "Info"] 
-];
-
-
+console.log("OnLoad: Build chord info html"); 
 
 let hElem1a = '<div class="collapse cc ' ; hElem1b = '' ; hElem1c = '" >';
 let hElem2  = '<div class="card card-body" style="padding:5px;">';
@@ -322,10 +204,11 @@ for (const myRow of  tags) {
    let aNote1 = myRow[1];
    let aNote2 = myRow[2];
    let aNote3 = myRow[3];
-   let aNote4 = myRow[4];
+   let aNote4 = myRow[4]; 
+   if (aNote4 == "n" ) { aNote4 = "" }
    /* console.log(aChord +" "+ aNote1 +" "+ aNote2 +" "+ aNote3 +" "+ aNote4 ); */
 
-   let hElem1b = "Note1" + aNote1 +" "+ "Note2" + aNote2 +" "+ "Note3" + aNote3 +" "+ "Notes" + aNote1  + aNote2  + aNote3 ; 
+   let hElem1b = "Note1" + aNote1 +" "+ "Note2" + aNote2 +" "+ "Note3" + aNote3 +" "+ "Note4" + aNote4 +"    "+  "Notes" + aNote1  + aNote2  + aNote3   + aNote4 ; 
    let hElem6  = aChord +" "+ aNote1 +" "+ aNote2 +" "+ aNote3 +" "+ aNote4 + " GENERATED" ;
 
    html += `<div class="collapse cc ${hElem1b}">${hElem2}${hElem3}${hElem4}${hElem5}${hElem6}${hElem7}`;
@@ -339,16 +222,10 @@ document.getElementById("demo").innerHTML = html;
 
 <script type="text/javascript">
 
-    function actStop() {
-    }
-    function actGo() {
-
-    }
-
     function actClear() {
 
       var elookForId = document.getElementById("lookfor");
-      elookForId.innerHTML = "";
+      elookForId.innerHTML = "Notes";
 
     }
 
@@ -367,26 +244,41 @@ document.getElementById("demo").innerHTML = html;
 
       const myArray = lookForChord.split(" ", 4);
 
-      let Note1 = myArray[1];
-      let Note2 = myArray[2];
-      let Note3 = myArray[3];
+      let Note1 = myArray[1]; if(Note1 === undefined){ Note1 = ''; }
+      let Note2 = myArray[2]; if(Note2 === undefined){ Note2 = ''; }
+      let Note3 = myArray[3]; if(Note3 === undefined){ Note3 = ''; }
+      let Note4 = myArray[4]; if(Note4 === undefined){ Note4 = ''; }
 
-      var chordInvert1 = '.Notes' + Note1 + Note2 + Note3;
-      var chordInvert2 = '.Notes' + Note2 + Note3 + Note1;
-      var chordInvert3 = '.Notes' + Note3 + Note1 + Note1;
+      var chordInvert1 = '.Notes' + Note1 + Note2 + Note3 + Note4;
+      var chordInvert2 = '.Notes' + Note2 + Note3 + Note4 + Note1;
+      var chordInvert3 = '.Notes' + Note3 + Note4 + Note1 + Note1;
+
+/* ADD boxs 1st 2nd inversion to hide/show list */
+/* ADD 4th note */
+/*
+
+LOTS LETTER NOTE LISTS add theses https://www.piano-keyboard-guide.com/piano-chords.html
+
+https://en.wikipedia.org/wiki/List_of_chords
+
+use wiki to get steps for notes then gen letter notes list w rexx
+
+How many piano chords are there in total?
+∗ 3 ! ) = 220 three note chords and similarly 495 four note chords , 792 5 note chords, 924 six note chords, 792 7 note chords, 495 8 note chords, 220 9 note chords, 66 10 note chords, 12 11 note chords and 1 12 note chords for a total of 4017 possible chords.May 2, 2021
+
+
+*/
 
       var classLookForChord = chordInvert1;
-      console.log(classLookForChord);
+      console.log("LookFor 1st: " + classLookForChord);
       var foundIt = document.querySelector(classLookForChord);
-      if (foundIt) { foundIt.classList.add('show');   }
+      if (foundIt) { foundIt.classList.add('show'); console.log("Found Chord 1st: " + classLookForChord); showAll(classLookForChord);  }
 
-     var classLookForChord = chordInvert2;
-      console.log(classLookForChord);
+      var classLookForChord = chordInvert2;
+      console.log("LookFor 2nd: " + classLookForChord);
       var foundIt = document.querySelector(classLookForChord);
-      if (foundIt) { foundIt.classList.add('show');   }
-
-showAll(chordInvert1); 
-
+      if (foundIt) { foundIt.classList.add('show'); console.log("Found Chord 2nd: " + classLookForChord); showAll(classLookForChord);  }
+     
 
    }
 
@@ -404,8 +296,9 @@ $(document).ready(function(){
 
 <script type="text/javascript">
 
-  function showAll(lookFor) { 
-   $(lookFor).addClass("show");
+  function showAll(ShowAllForChord) { 
+   $(ShowAllForChord).addClass("show");
+   console.log("Show ALL: " + ShowAllForChord);
   }
 
 </script>
